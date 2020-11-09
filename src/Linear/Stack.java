@@ -27,13 +27,10 @@ public class Stack<T> {
     public String toString() {
         StringBuffer sb = new StringBuffer();
         Iterator<T> iter = doublyll.iterator();
-        while(iter.hasNext()) sb.append(" >- " + iter.next());
-        return this.reverse(sb.toString());
-    }
-
-    private String reverse(String s) {
-        if (s == null || s.length() - 1 == 0) return s;
-        return s.charAt(s.length() - 1) + reverse(s.substring(0, s.length() - 1));
+        Stack<String> s = new Stack<>();
+        while(iter.hasNext()) s.push(iter.next().toString());
+        while(!s.isEmpty()) sb.append(s.pop() + " -> ");
+        return sb.toString();
     }
 
     public static void main(String[] args) {
