@@ -62,7 +62,7 @@ public class BinarySearchTree<V extends Comparable<V>> implements Iterable<V> {
             inorder();
         }
 
-        // travers the tree from the rightmost node to the leftmost node
+        // traverses the tree from the rightmost node to the leftmost node (actually reverse inorder traversal)
         private void inorder() {
             inorder(root);
         }
