@@ -92,7 +92,7 @@ public class SortingVisualizer implements Runnable {
         for(Rectangle rect: rects) rect.draw(g);
 
         try {
-            TimeUnit.MILLISECONDS.sleep(75);
+            TimeUnit.MILLISECONDS.sleep(10);
         } catch (InterruptedException ie) {
             Thread.currentThread().interrupt();
         }
@@ -144,3 +144,4 @@ class Window extends JFrame {
         frame.setVisible(true);
     }
 }
+
