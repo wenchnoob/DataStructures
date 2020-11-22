@@ -16,7 +16,7 @@ public class EgyptianFractions {
         System.out.println(f3);
         System.out.println(f4);
 
-        List<Fraction> fracts = egyptianFractions(new Fraction(3, 11));
+        List<Fraction> fracts = egyptianFractions(new Fraction(5, 11));
         System.out.println(fracts);
 
 
