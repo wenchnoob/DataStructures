@@ -2,13 +2,15 @@ package PracticeAlgorithms;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class EgyptianFractions {
 
     public static void main(String[] args) {
-        Fraction f1 = new Fraction(6, 14);
+
+        Fraction f1 = new Fraction(0, 14);
         Fraction f2 = Fraction.simplify(f1);
-        Fraction f3 = f2.subtract(new Fraction(0, 14));
+        Fraction f3 = f2.subtract(new Fraction(2, 14));
         Fraction f4 = findClosestEgyptianFraction(f3);
 
         System.out.println(f1);
@@ -18,8 +20,6 @@ public class EgyptianFractions {
 
         List<Fraction> fracts = egyptianFractions(new Fraction(5, 11));
         System.out.println(fracts);
-
-
 
     }
 
